@@ -1,50 +1,57 @@
-# Project3-Ecommerce-Analysis
-E-Commerce Transactions Analysis – End-to-end project using Python, SQL, and Power BI. Analyzed 50k+ e-commerce records to uncover revenue, profit, and customer trends. Demonstrates data cleaning, EDA, visualization, and actionable business insights.
-[README_Project3_Repo.md](https://github.com/user-attachments/files/22311429/README_Project3_Repo.md)
-# E-Commerce Transactions Analysis
+# Project 3: E-Commerce Transactions Analysis  
 
-This project analyzes **50k+ e-commerce transactions** to uncover revenue, profit, and customer trends. 
-It demonstrates **Python (pandas, matplotlib, seaborn)** for data cleaning and EDA, 
-**SQL** for querying and aggregations, and **Power BI** for interactive dashboards and KPI reporting.
+End-to-end analytics project using **Python, SQL, and Power BI**.  
+Analyzed **50k+ e-commerce transactions** to uncover revenue, customer, and regional trends.  
+Demonstrates **data cleaning, feature engineering, EDA, SQL querying, dashboarding, and business insights**.  
 
 ---
 
-## Project Objectives
-- Analyze revenue, profit, and margin trends across products, regions, and customers  
-- Identify repeat purchase behavior and customer value drivers  
-- Create actionable insights for business decision-making through dashboards  
+## Key Insights
+- **Monthly Revenue Trend** → Revenue shows steady growth with seasonal variation.  
+- **Top Categories** → Sports, Toys, and Books are the largest revenue drivers.  
+- **Top Countries** → France, Canada, and USA lead overall performance.  
+- **Customers** → A small set of high-value customers contribute disproportionately to revenue.  
+- **Payment Methods** → Mix is fairly balanced, but COD slightly leads.  
+
+---
+
+## Example Visuals  
+
+### Monthly Revenue Trend
+![Monthly Revenue](powerbi/monthly_revenue_trend.png)
+
+### Top Product Categories
+![Top Categories](powerbi/top_categories.png)
+
+### Top Countries
+![Top Countries](powerbi/top_countries.png)
+
+### Repeat vs One-Time Customers
+![Repeat vs One-Time](powerbi/repeat_vs_onetime.png)
 
 ---
 
 ## Tools & Skills
-- **Python** – pandas, matplotlib, seaborn for cleaning, feature engineering, and EDA  
-- **SQL** – queries for revenue/profit summaries, cohorts, and customer segmentation  
-- **Power BI** – interactive dashboards with slicers, KPI cards, and trend charts  
+- **Python** → pandas, matplotlib, seaborn for cleaning, feature engineering, and EDA  
+- **SQL** → reusable queries for KPIs, revenue trends, and customer segmentation  
+- **Power BI** → interactive dashboards with slicers, KPI cards, and trend charts  
 
 ---
-
-## Example Business Questions
-- Which product categories and regions generate the most profit?  
-- How do profit margins vary across customer groups?  
-- What are the monthly revenue and profit growth trends?  
-- What percentage of customers are repeat buyers vs one-time?  
-
----
-
 ## Repository Structure
-```
 Project3-Ecommerce-Analysis/
- ├── data/                # raw dataset
- ├── notebooks/           # Jupyter notebooks (Python EDA)
- ├── sql/                 # SQL scripts
- ├── powerbi/             # Power BI dashboard file
- └── README.md            # project documentation
-```
+├── data/ # raw, cleaned datasets + CSV exports
+├── notebooks/ # Jupyter notebooks (final analysis)
+├── sql/ # SQL scripts (queries.sql)
+├── powerbi/ # exported visuals + dashboard file
+└── README.md # project documentation
 
 ---
 
-## Next Steps
-- [ ] Perform initial EDA in Python (data cleaning + summary stats)  
-- [ ] Write SQL queries for key metrics (revenue, profit, retention)  
-- [ ] Build Power BI dashboard with visuals and slicers  
-- [ ] Add screenshots and key findings to this README  
+## How to Reproduce
+1. Clone this repo.  
+2. Install requirements: `pandas`, `matplotlib`, `seaborn`.  
+3. Run the notebook: `notebooks/Project3_Ecommerce_Analysis_Final.ipynb`.  
+4. Outputs will save to `data/` (CSVs) and `powerbi/` (charts).  
+5. Load CSVs into Power BI to explore the interactive dashboard.  
+
+---
